@@ -4,7 +4,7 @@ import Shipping from "./Shipping"
 
 const Information = () => {
   return (
-    <div className="w-[465px]">
+    <div className="w-[350px] lg:w-[465px]">
       <ContactInfo />
       <Shipping />
       <CheckoutFooter />

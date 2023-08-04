@@ -27,7 +27,7 @@ const Shipping = () => {
         <div className="flex gap-[31px]">
           <Input
             label={"Country"}
-            placeholder={"Your country ..."}
+            placeholder={"Your country..."}
             icon={<BiWorld size={24} />}
           />
           <Input

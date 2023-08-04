@@ -30,7 +30,7 @@ const Preview = () => {
   }
 
   return (
-    <div className="flex flex-col justify-between w-[383px] h-[535px] bg-lightGray rounded-xl p-[32px]">
+    <div className="flex flex-col justify-between w-[350px] lg:w-[383px] h-[535px] bg-lightGray rounded-xl p-[32px]">
       <div className="flex flex-col gap-[30px]">
         {items &&
           items.map((item, index) => (
