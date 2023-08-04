@@ -5,8 +5,10 @@ export default {
     extend: {},
     colors: {
       gray: "#828282",
+      lightGray: "#F2F2F2",
       orange: "#F2994A",
-      white: "#ffffff"
+      white: "#ffffff",
+      medGray: "#e0e0e0"
     },
     fontFamily: {
       display: ["Montserrat"]

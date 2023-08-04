@@ -4,7 +4,7 @@ import { MdEmail, MdPhone } from "react-icons/md"
 
 const ContactInfo = () => {
   return (
-    <div className="mt-[50px]">
+    <div>
       <div className="text-[18px] text-gray">Contact information</div>
       <div className="mt-[15px]">
         <Input
