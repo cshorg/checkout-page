@@ -5,14 +5,14 @@ const Preview = () => {
   const [items, setItems] = useState([
     {
       name: "Vintage Backbag",
-      price: "54.99",
+      price: 54.99,
       discount: "94.99",
       img: "/photo1.png",
       amount: "1"
     },
     {
       name: "Levi Shoes",
-      price: "74.99",
+      price: 74.99,
       discount: "124.99",
       img: "/photo2.png",
       amount: "1"
@@ -20,13 +20,9 @@ const Preview = () => {
   ])
 
   const total = () => {
-    let itemsTotal = 19
-
-    for (let i = 0; i < items.length; i++) {
-      itemsTotal += parseFloat(items[i].price)
-    }
-
-    return itemsTotal.toFixed(2)
+    return items.reduce((value, item) => {
+      return (value += item.price)
+    }, 0)
   }
 
   return (
@@ -53,7 +49,7 @@ const Preview = () => {
         <hr />
         <div className="pt-[12px] flex items-center justify-between">
           <div className="text-[18px]">Total</div>
-          <div className="text-[14px]">{total()}</div>
+          <div className="text-[14px]">{"$" + total()}</div>
         </div>
       </div>
     </div>
